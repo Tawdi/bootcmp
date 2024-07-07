@@ -8,9 +8,9 @@
   color: aquamarine;
   font-style: normal;
 }
+
 body {
-   background-image: url(image/88891.jpg);
-   backdrop-filter: brightness(0.8);
+   background-image: url(image/40.jpg);
    background-attachment: fixed;
    background-size: cover;
    min-height: 100vh;
@@ -69,26 +69,31 @@ body {
 #accueil{
   display: flex;
   margin: 20px;
-  border-radius: 30px;
-  background-color: rgba(250, 235, 215, 0.331);
   align-items: center;
 }
 .image_accueil{
   width: 40%;
   height: 400px;
+  
   background-color: rgba(127, 255, 212, 0.655);
 }
 .text_accueil{
   margin: 30px;
+  padding:30px ;
+  border: 2px rgba(0, 0, 0, 0.575) solid ;
+  border-radius: 30px;
+  background: linear-gradient(to top left, #00aa7179, #0000008e);
+  /* background-color: rgba(73, 236, 222, 0.331); */
+  backdrop-filter: blur(10px);
   width: 60%;
   text-align: center;
-  height: 400px;
+  height: 500px;
 
 }
 .text_accueil h1{
   color: azure;
   font-size: 30px;
-  padding: 0px;  
+  padding: 30px;  
 }
 
 /****      categorie      ****/
@@ -97,6 +102,9 @@ body {
   align-items: center;
   padding: 10px 100px;
   justify-content: space-between;
+}
+.categorie a {
+  text-decoration: none;
 }
 .element_categorie{
   display: flex;
@@ -109,9 +117,10 @@ body {
 .element_categorie_image3,
 .element_categorie_image4
 {
- height: 100px;
+ height: 150px;
  background-color: rgb(43, 226, 183);
- width: 100px;
+ width: 150px;
+ border: 2px rgb(43, 226, 183) ridge;
  border-radius: 100%;
  margin-bottom: 10px;
 }
@@ -133,9 +142,11 @@ body {
 
 }
 .element_categorie_title{
- width: 160px; 
+ width: 200px; 
  background-color: rgba(0, 255, 170, 0.215);
- backdrop-filter: blur(20px);
+ /* background: linear-gradient(to top left, #00aa7179, #0000008e); */
+ backdrop-filter: blur(10px);
+ border: 2px rgb(43, 226, 183) ridge;
  border-radius: 100px;
  padding: 10px;
 }
@@ -150,16 +161,16 @@ body {
 .definition_zone{
   display: flex;
   align-items: center;
-
-
 }
 .definition_text{
-  background-color: rgba(0, 255, 170, 0.205);
+  /* background-color: rgba(0, 255, 170, 0.205); */
+  background: linear-gradient(to top left, #00aa7179, #0000008e);
   backdrop-filter: blur(10px);
-  height: 400px;
+  height: 500px;
   padding: 20px;
-  margin: 50px;
+  margin: 5%;
   text-align: center;
+  border: 2px rgb(43, 226, 183) ridge;
   border-radius: 20px;
   width: 50%;
 }
@@ -171,15 +182,179 @@ body {
 .definition_images{
   background-color: rgba(46, 226, 43, 0.409);
   height: 400px;
+  padding: 20px;
+  margin: 5%;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 50%;
   
 }
+
 .definition_images img{
   height: 50%;
   width: 70%;
+  border-radius: 30px;
   padding: 10px 50px;
   
+}
+
+
+
+/*******        monoco dico comparaison         ********/
+.monoco_dico_comparaison{
+
+}
+.monoco_dico_title{ 
+  margin: 50px;
+  padding: 30px;
+  font-size: 30px;
+  border-radius: 30px;
+  /* background-color: rgba(250, 235, 215, 0.331); */
+  background: linear-gradient(to top left, #00aa7179, #0000008e);
+  backdrop-filter: blur(10px);
+  width: auto;
+  text-align: center;
+}
+.top_comparaison{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+
+  
+}
+.top_comparaison div{
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(to top left, #015a3c79, #6ab1588e);
+  font-size: 30px;
+  backdrop-filter: blur(10px);
+  width: 30%;
+  text-align: center;
+
+}
+.main_comparaison{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+
+  
+}
+.monoco_caracteristiques, .caracteristiques, .dico_caracteristiques
+{
+  width: 30%;
+  text-align: center;
+}
+.monoco_caracteristiques, .dico_caracteristiques{
+  background-color: rgba(131, 243, 116, 0.493);
+
+}
+
+.element_comparaison , .carac 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  padding-top: 30px;
+  margin: 10px;
+}
+.image_carac{
+  border-radius: 100%;
+  background-color: aliceblue;
+  height: 100px;
+  width: 100px;
+}
+.element_comparaison p /*  , .carac p */{ 
+  background-color: rgba(0, 255, 170, 0.215);
+  backdrop-filter: blur(10px);
+  width: 100px;
+  padding: 8px 0px;
+  border: 2px rgb(43, 226, 183) ridge;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+
+/* ****** video ******* */
+.video_zone{
+  background: linear-gradient(to top left, #00aa7179, #0000008e);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  
+  margin: 30px 00px;
+  display: flex;
+  justify-content: center;
+}
+.video_zone video{
+  border-radius: 20px;
+  height: auto;
+  width: 60%;
+}
+/* *****************************
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+/* ***************************** */
+footer{
+  width: 100%;
+  /* background: linear-gradient(to right,#00093c, #2d0b00); */
+  background: linear-gradient(to top left, #015a3c79, #6ab1588e);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 50px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer_email{
+  width: fit-content;
+  border-bottom: 1px solid #f66335;
+  margin: 20px 0;
+}
+.col ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+.col ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+footer .copyright{
+  text-align: center;
 }
