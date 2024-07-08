@@ -69,8 +69,6 @@ body {
 #accueil{
   display: flex;
   margin: 20px;
-  border-radius: 30px;
-  background-color: rgba(250, 235, 215, 0.331);
   align-items: center;
 }
 .image_accueil{
@@ -81,6 +79,10 @@ body {
 .text_accueil{
   margin: 30px;
   width: 60%;
+  background: rgb(0,0,0);
+  background: linear-gradient(144deg, rgba(0,0,0,0.57484243697479) 2%, rgba(201,200,200,0.5832457983193278) 100%);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
   text-align: center;
   height: 400px;
 
