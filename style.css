@@ -10,25 +10,22 @@
 }
 
 body {
-   background-image: url(image/40.jpg);
+   background-image: url(image/2650.jpg);
    background-attachment: fixed;
    background-size: cover;
    min-height: 100vh;
-
-  /* 
-  background-color: aliceblue;
-  */
  }
 
 /****              nav bar              ****/
  header {
   background-color: transparent;
-  
-  position: sticky;
+  background: linear-gradient(to top left, #00aa7179, #0000008e);
+  backdrop-filter: blur(10px);
+  /* position: sticky; */
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0px 100px;
+  padding: 30px 100px 5px 100px;
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
@@ -37,7 +34,7 @@ body {
 }
 .logo {
   color: azure;
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
   font-weight: 600;
 
@@ -80,10 +77,9 @@ body {
 .text_accueil{
   margin: 30px;
   padding:30px ;
-  border: 2px rgba(0, 0, 0, 0.575) solid ;
+  border: 2px rgb(43, 226, 183) solid ;
   border-radius: 30px;
   background: linear-gradient(to top left, #00aa7179, #0000008e);
-  /* background-color: rgba(73, 236, 222, 0.331); */
   backdrop-filter: blur(10px);
   width: 60%;
   text-align: center;
@@ -97,13 +93,13 @@ body {
 }
 
 /****      categorie      ****/
-.categorie{
+#categorie{
   display: flex;
   align-items: center;
   padding: 10px 100px;
   justify-content: space-between;
 }
-.categorie a {
+#categorie a {
   text-decoration: none;
 }
 .element_categorie{
@@ -206,11 +202,10 @@ body {
 
 }
 .monoco_dico_title{ 
-  margin: 50px;
-  padding: 30px;
+  margin: 50px 15%;
+  padding: 80px;
   font-size: 30px;
   border-radius: 30px;
-  /* background-color: rgba(250, 235, 215, 0.331); */
   background: linear-gradient(to top left, #00aa7179, #0000008e);
   backdrop-filter: blur(10px);
   width: auto;
@@ -228,6 +223,7 @@ body {
   border-radius: 30px;
   padding: 10px;
   margin-bottom: 20px;
+  color: azure;
   background: linear-gradient(to top left, #015a3c79, #6ab1588e);
   font-size: 30px;
   backdrop-filter: blur(10px);
@@ -263,19 +259,23 @@ body {
   margin: 10px;
 }
 .image_carac{
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: aliceblue;
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
+  /* margin-bottom: 10px; */
 }
 .element_comparaison p /*  , .carac p */{ 
-  background-color: rgba(0, 255, 170, 0.215);
-  backdrop-filter: blur(10px);
-  width: 100px;
-  padding: 8px 0px;
-  border: 2px rgb(43, 226, 183) ridge;
-  border-radius: 100px;
-  margin-top: 20px;
+  /* background-color: rgba(0, 255, 170, 0.215);
+  backdrop-filter: blur(10px); */
+  color: azure;
+  width: 150px;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 5px 0px;
+  /* border: 2px rgb(43, 226, 183) ridge;
+  border-radius: 100px; */
+  /* margin-top: 20px; */
 }
 
 /* ****** video ******* */
@@ -293,19 +293,11 @@ body {
   height: auto;
   width: 60%;
 }
-/* *****************************
-#background-video {
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+/* ***********        a_propos       ********** */
+#a_propos div{
+  display: flex;
 }
-/* ***************************** */
+/* *********          footer         ********** */
 footer{
   width: 100%;
   /* background: linear-gradient(to right,#00093c, #2d0b00); */
