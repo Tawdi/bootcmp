@@ -8,19 +8,29 @@
   color: aquamarine;
   font-style: normal;
 }
-
+html{
+  margin: 0px;
+  padding: 0px;
+}
 body {
    background-image: url(image/bg.jpg);
+   /* background-color: rgba(148, 197, 14, 0.5); */
+   backdrop-filter: blur(10px);
+   margin: 0px;
    background-attachment: fixed;
    background-size: cover;
    min-height: 100vh;
+   /* min-width: 1000px; */
  }
+:root{
 
+  --color-background: linear-gradient(to top left,#02963379, #504f4f1c);
+}
 /* ***              nav bar              *** */
  header {
   background-color: transparent;
-  background: linear-gradient(to left, #015a262f, #01c02e3a);
-  backdrop-filter: blur(10px);
+  /* background: linear-gradient(to left, #015a262f, #01c02e3a); */
+  backdrop-filter: blur(40px);
   position: sticky;
   top: 0;
   padding: 5px 100px 5px 100px;
@@ -33,10 +43,15 @@ body {
 }
 .logo {
   color: azure;
+  display: flex;
+  align-items: center;
   font-size: 40px;
   text-decoration: none;
   font-weight: 600;
 
+}
+.logo img{
+  height:60px;
 }
 
 .navbar a {
@@ -70,14 +85,14 @@ body {
 .image_accueil{
   width: 40%;
   height: 400px;
-  background-color: rgba(127, 255, 212, 0.655);
+  background-color: rgba(127, 255, 212, 0);
 }
 .text_accueil{
   margin: 30px;
   padding:30px ;
   border: 2px rgb(43, 226, 183) solid ;
   border-radius: 30px; 
-  background: linear-gradient(to top left, #0aa77279, #0000001c);
+  background: linear-gradient(to top left, #02963379, #504f4f1c);
   backdrop-filter: blur(10px);
   width: 60%;
   font-size: 30px;
@@ -97,7 +112,7 @@ body {
 #categorie{
   display: flex;
   align-items: center;
-  padding: 10px 100px;
+  padding: 150px 100px 10px 100px;
   justify-content: space-between;
 }
 #categorie a {
@@ -122,20 +137,20 @@ body {
  margin-bottom: 10px;
 }
 .element_categorie_image1{
-  background-image: url(image/40.jpg);
+  background-image: url(image/11.jpg);
   background-size: cover;
 }
 .element_categorie_image2{
-  background-image: url(image/40.jpg);
+  background-image: url(image/22.webp);
   background-size: cover;
 }
 .element_categorie_image3{
-  background-image: url(image/40.jpg);
+  background-image: url(image/55.jpg);
   background-size: cover;
 }
 .element_categorie_image4{
-  background-image: url(image/40.jpg);
-  background-size: contain;
+  background-image: url(image/44.jpg);
+  background-size: cover;
 
 }
 .element_categorie_title{
@@ -158,20 +173,23 @@ body {
 .definition_zone{
   display: flex;
   /* flex-wrap: wrap; */
+  margin: 150px  30px;
   justify-content: space-around;
   align-items: center;
 }
 .definition_text{
   /* background-color: rgba(0, 255, 170, 0.205); */
-  background: linear-gradient(to top left, #0aa77279, #0000001c);
+  background: var(--color-background);
   backdrop-filter: blur(10px);
-  height: 500px;
-  padding: 20px;
-  margin:  2% 5%;
+  height: 400px;
+  padding: 30px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  line-height: 2;
   text-align: center;
   border: 2px rgb(43, 226, 183) ridge;
   border-radius: 20px;
-  width: 40%;
+  width: 45%;
 }
 .definition_text h2{
   color: antiquewhite;
@@ -179,20 +197,19 @@ body {
 
 }
 .definition_images{
-  /* background-color: rgba(46, 226, 43, 0.409); */
   height: 500px;
   margin:  0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
-  width: 50%
+  width: 50%;
   
 }
 
 .definition_images img{
-  height: 49%;
-  width: 80%;
+  height: auto;
+  width: 45%;
   border: 3px rgba(151, 255, 238, 0.461) solid ;
   border-radius: 20px;
  
@@ -203,25 +220,34 @@ body {
   display: flex;
 }
 .monodico div{
-width: 500px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+  width: 40vw;
 }
 .monodico  img{ 
-  height: 100px;
+  border-radius: 10px;
+  
+  top: 20%;
+  position: absolute;
+  border: 2px white solid;
   width: auto;
+  height: 33%;
 }
 
 
 
 /*******        monoco dico comparaison         ********/
-.monoco_dico_comparaison{
 
-}
 .monoco_dico_title{ 
   margin: 50px 15%;
   padding: 80px;
   font-size: 30px;
   border-radius: 30px;
-  background: linear-gradient(to top left, #0aa77279, #0000001c);
+  background: var(--color-background);
   backdrop-filter: blur(10px);
   width: auto;
   text-align: center;
@@ -283,19 +309,12 @@ width: 500px;
   background-color: aliceblue;
   height: 130px;
   width: 130px;
-  /* margin-bottom: 10px; */
 }
 .element_comparaison p /*  , .carac p */{ 
-  /* background-color: rgba(0, 255, 170, 0.215);
-  backdrop-filter: blur(10px); */
-  color: azure;
   width: 150px;
   font-size: 25px;
   font-weight: 100;
   padding: 5px 0px;
-  /* border: 2px rgb(43, 226, 183) ridge;
-  border-radius: 100px; */
-  /* margin-top: 20px; */
 }
 
 /* ****** video ******* */
