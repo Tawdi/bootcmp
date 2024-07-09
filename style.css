@@ -54,14 +54,14 @@ body {
   height:60px;
 }
 
-.navbar a {
+.navbar a , .col ul li a {
   position: relative;
   font-size: 18px;
   color: azure; 
   text-decoration: none;
   margin-left: 40px;
 }
-.navbar a::before {
+.navbar a::before ,.col ul li a::before {
   content: '';
   position: absolute;
   top: 100%;
@@ -71,7 +71,7 @@ body {
   background: rgb(104, 227, 66);
   transition: .3s;
 }
-.navbar a:hover::before{
+.navbar a:hover::before ,.col ul li a:hover::before{
   width: 100%;
   color: rgb(138, 253, 103);
 }
@@ -350,6 +350,18 @@ body {
 /* ***********        a_propos       ********** */
 #a_propos div{
   display: flex;
+  flex-direction: column;
+
+}
+#a_propos div h3 {
+  font-size: 24px;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+#a_propos div p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: aliceblue;
 }
 /* *********          footer         ********** */
 footer{
@@ -370,6 +382,7 @@ footer{
   align-items: flex-start;
   justify-content: space-between;
 }
+
 .col{
   flex-basis: 25%;
   padding: 10px;
@@ -392,6 +405,7 @@ footer{
 }
 .col ul li a{
   text-decoration: none;
+  font-size: 13px;
   color: #fff;
 }
 
