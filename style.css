@@ -86,15 +86,15 @@ body {
 .image_accueil{
   width: 40%;
   height: 400px;
-  background-color: rgba(127, 255, 212, 0);
+  background-color: rgba(127, 255, 159, 0.692);
 }
 .text_accueil{
   margin: 30px;
   padding:70px 30px 30px 30px ;
-  border: var(--border-herb);
+  /* border: var(--border-herb);
   border-radius: 30px; 
   background: linear-gradient(to top left, #02963379, #504f4f1c);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
   width: 60%;
   font-size: calc(var(--font-herb)-20px);
   border-radius: 30px;
@@ -228,7 +228,7 @@ body {
 
 .definition_images img{
   height: 200px;
-
+  object-fit: cover;
   width: 45%;
   border: var(--border-herb);
   border-radius: 20px;
@@ -271,8 +271,13 @@ body {
   width: auto;
   text-align: center;
 }
+/* .monoco_dico_comparaison{
+  position: relative;
+} */
 .top_comparaison{
   display: flex;
+  position: sticky;
+  top: 80px;
   justify-content: space-between;
   align-items: center;
   margin: 0px 30px 0px 30px;
@@ -421,7 +426,8 @@ hr{
 footer .copyright{
   text-align: center;
 }
-/* ******************** */
+/* ********************* */
+ 
 /* ******************** */
 @media (max-width: 1200px) {
   header {

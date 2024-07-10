@@ -1,0 +1,217 @@
+/* Logo Pulse */
+.logo img {
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Menu de Navigation avec Effet Underline */
+.navbar a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6347;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Animation de Fond de la Section d'Accueil */
+#accueil {
+    background: linear-gradient(270deg, #ff6347, #ff6347);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Effet de Zoom sur les Images de la Section Catégorie */
+.element_categorie_image1, .element_categorie_image2, .element_categorie_image3, .element_categorie_image4 {
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.element_categorie_image1:hover, .element_categorie_image2:hover, .element_categorie_image3:hover, .element_categorie_image4:hover {
+    transform: scale(1.1);
+}
+
+/* Animation de Texte pour les Titres */
+.definition_text h2, .monodico h2 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0;
+    }
+    to { 
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************/
+
+
+
+
+
+
+
+  /* ***********     animation 1    ******* */
+/* Animation du logo */
+.logo img {
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Transitions des liens du menu de navigation */
+.navbar a {
+  position: relative;
+  display: inline-block;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff6347;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Animation de la section d'accueil */
+#accueil {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Animation des éléments de la section "catégorie" */
+.element_categorie {
+  transition: transform 0.3s ease;
+}
+
+.element_categorie:hover {
+  transform: translateY(-10px);
+}
+
+/* Animation de la section "À propos" */
+#video {
+  animation: slideInUp 1.5s ease-in-out;
+}
+
+@keyframes slideInUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
