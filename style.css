@@ -343,7 +343,6 @@ body {
   background: linear-gradient(to top left, #00aa7179, #0000008e);
   backdrop-filter: blur(10px);
   padding: 50px;
-  
   margin: 30px 00px;
   display: flex;
   justify-content: center;
@@ -428,6 +427,7 @@ footer .copyright{
     margin: 0px 20px;
   }
 
+
   .text_accueil {
     width: 70%;
   }
@@ -494,6 +494,15 @@ footer .copyright{
   .dico_caracteristiques {
     width: 80%;
     margin-bottom: 20px;
+  }
+  .monodico{
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  .monodico div {
+    width: 100%;
+    margin: 20PX 0PX 20PX 0PX;
   }
 
   .video_zone video {
