@@ -10,6 +10,7 @@
 }
 :root{
   --border-herb:2px #cefa94 solid ;
+  --font-herb: 50px;
   --color-background: linear-gradient(to top left,#02963379, #504f4f1c);
 }
 html{
@@ -44,7 +45,7 @@ body {
   color: azure;
   display: flex;
   align-items: center;
-  font-size: 30px;
+  font-size: calc(var(--font-herb)-20px);
   text-decoration: none;
   font-weight: 600;
 
@@ -56,7 +57,7 @@ body {
 
 .navbar a , .col ul li a {
   position: relative;
-  font-size: 18px;
+  font-size: calc(var(--font-herb)-32px);
   color: azure; 
   text-decoration: none;
   margin-left: 40px;
@@ -95,7 +96,7 @@ body {
   background: linear-gradient(to top left, #02963379, #504f4f1c);
   backdrop-filter: blur(10px);
   width: 60%;
-  font-size: 30px;
+  font-size: calc(var(--font-herb)-20px);
   border-radius: 30px;
   backdrop-filter: blur(20px);
   text-align: left;
@@ -104,7 +105,7 @@ body {
 }
 .text_accueil h1{
   color: azure;
-  font-size: 50px;
+  font-size: var(--font-herb);
   padding: 30px 0px;  
 }
 
@@ -263,7 +264,7 @@ body {
 .monoco_dico_title{ 
   margin: 50px 15%;
   padding: 80px;
-  font-size: 30px;
+  font-size: calc(var(--font-herb)-20px);
   border-radius: 30px;
   background: var(--color-background);
   backdrop-filter: blur(10px);
@@ -282,7 +283,7 @@ body {
 .top_comparaison div{
   padding: 10px;
   margin: 0px 10px 20px 10px;
-  font-size: 27px;
+  font-size: calc(var(--font-herb)-23px);
   width: 300px;
   color: azure;
   border: var(--border-herb);
@@ -333,7 +334,7 @@ body {
 }
 .element_comparaison p /*  , .carac p */{ 
   width: 150px;
-  font-size: 25px;
+  font-size: calc(var(--font-herb)-25px);
   font-weight: 100;
   padding: 5px 0px;
 }
@@ -359,12 +360,12 @@ body {
 
 }
 #a_propos div h3 {
-  font-size: 24px;
+  font-size: calc(var(--font-herb)-28px);
   color: aliceblue;
   margin-bottom: 20px;
 }
 #a_propos div p {
-  font-size: 16px;
+  font-size: calc(var(--font-herb)-34px);
   line-height: 1.6;
   color: aliceblue;
 }
@@ -375,7 +376,7 @@ footer{
   backdrop-filter: blur(10px);
   color: #fff;
   padding: 50px 0 30px;
-  font-size: 13px;
+  font-size: calc(var(--font-herb)-37px);
   line-height: 20px;
 }
 .row{
@@ -407,7 +408,7 @@ footer{
 }
 .col ul li a{
   text-decoration: none;
-  font-size: 13px;
+  font-size: calc(var(--font-herb)-37px);
   color: #fff;
 }
 
@@ -485,7 +486,7 @@ footer .copyright{
   .top_comparaison div{
     padding: 10px;
     margin: 0px 10px 20px 0px;
-    font-size: 20px;
+    /* font-size: 20px; */
     width: 250px;
   } 
 
@@ -511,14 +512,15 @@ footer .copyright{
 }
 
 @media (max-width: 768px) {
-
-  
+  :root{
+    --font-herb: 30px;
+  }
   .navbar a {
     margin-left: 20px;
-    font-size: 16px;
+    /* font-size: 16px; */
   }
   .logo{
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   .logo img {
     height: 30px;
@@ -531,7 +533,7 @@ footer .copyright{
   .text_accueil {
     width: 90%;
     padding: 20px;
-    font-size: 24px;
+    /* font-size: 24px; */
   }
 /* 
   #categorie {
@@ -577,11 +579,12 @@ footer .copyright{
 }
 
 @media (max-width: 576px) {
- 
-
+  :root{
+    --font-herb: 20px;
+  }
     .navbar a {
     margin-left: 10px;
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
   .image_accueil {
@@ -591,7 +594,7 @@ footer .copyright{
   .text_accueil {
     width: 100%;
     padding: 10px;
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 
   .element_comparaison .image_carac{
@@ -609,7 +612,7 @@ footer .copyright{
   .top_comparaison div{
     padding: 10px;
     margin: 0px 10px 20px 0px;
-    font-size: 17px;
+    /* font-size: 17px; */
     width: 200px;
   }  
 
