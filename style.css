@@ -10,7 +10,8 @@
 }
 :root{
   --border-herb:2px #cefa94 solid ;
-  --font-herb: 50px;
+  --font-herb: 30px;
+  --font-herb-title:27px;
   --color-background: linear-gradient(to top left,#02963379, #504f4f1c);
 }
 html{
@@ -45,7 +46,7 @@ body {
   color: azure;
   display: flex;
   align-items: center;
-  font-size: calc(var(--font-herb)-20px);
+  font-size: var(--font-herb);
   text-decoration: none;
   font-weight: 600;
 
@@ -96,7 +97,7 @@ body {
   background: linear-gradient(to top left, #02963379, #504f4f1c);
   backdrop-filter: blur(10px); */
   width: 60%;
-  font-size: calc(var(--font-herb)-20px);
+  font-size: var(--font-herb-title);
   border-radius: 30px;
   backdrop-filter: blur(20px);
   text-align: left;
@@ -261,10 +262,10 @@ body {
 
 /*******        monoco dico comparaison         ********/
 
-.monoco_dico_title{ 
+.monoco_dico_title { 
   margin: 50px 15%;
   padding: 80px;
-  font-size: calc(var(--font-herb)-20px);
+  font-size: var(--font-herb-title);
   border-radius: 30px;
   background: var(--color-background);
   backdrop-filter: blur(10px);
@@ -288,7 +289,7 @@ body {
 .top_comparaison div{
   padding: 10px;
   margin: 0px 10px 20px 10px;
-  font-size: calc(var(--font-herb)-23px);
+  font-size: var(--font-herb-title);
   width: 300px;
   color: azure;
   border: var(--border-herb);
@@ -296,7 +297,6 @@ body {
   background: linear-gradient(to top left, #015a3c79, #6ab1588e);
   backdrop-filter: blur(10px);
   text-align: center;
-
 }
 .main_comparaison{
   display: flex;
@@ -318,7 +318,6 @@ body {
 
 .element_comparaison , .carac {
   display: flex;
- 
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -339,7 +338,7 @@ body {
 }
 .element_comparaison p /*  , .carac p */{ 
   width: 150px;
-  font-size: calc(var(--font-herb)-25px);
+  font-size: var(--font-herb-title);
   font-weight: 100;
   padding: 5px 0px;
 }
@@ -359,21 +358,23 @@ body {
   width: 60%;
 }
 /* ***********        a_propos       ********** */
-#a_propos div{
+#a_propos {
   display: flex;
+  background: linear-gradient(to top left, #015a3c79, #6ab1588e);
+  padding: 50px;
+  margin: 200px auto;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  width: 70%;
+  text-align: center;
   flex-direction: column;
-
 }
-#a_propos div h3 {
-  font-size: calc(var(--font-herb)-28px);
-  color: aliceblue;
+#a_propos h3 {
+  font-size: var(--font-herb-title);
+  color: rgb(255, 255, 255);
   margin-bottom: 20px;
 }
-#a_propos div p {
-  font-size: calc(var(--font-herb)-34px);
-  line-height: 1.6;
-  color: aliceblue;
-}
+
 /* *********          footer         ********** */
 footer{
   width: 100%;
@@ -381,7 +382,7 @@ footer{
   backdrop-filter: blur(10px);
   color: #fff;
   padding: 50px 0 30px;
-  font-size: calc(var(--font-herb)-37px);
+
   line-height: 20px;
 }
 .row{
@@ -413,7 +414,6 @@ footer{
 }
 .col ul li a{
   text-decoration: none;
-  font-size: calc(var(--font-herb)-37px);
   color: #fff;
 }
 
