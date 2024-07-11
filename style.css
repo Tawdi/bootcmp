@@ -17,6 +17,7 @@
 html{
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 body {
    background-image: url(image/bg.jpg);
@@ -56,14 +57,14 @@ body {
   height:60px;
 }
 
-.navbar a , .col ul li a {
+.navbar a , .ftr_element ul li a {
   position: relative;
   font-size: calc(var(--font-herb)-32px);
   color: azure; 
   text-decoration: none;
   margin-left: 40px;
 }
-.navbar a::before ,.col ul li a::before {
+.navbar a::before ,.ftr_element ul li a::before {
   content: '';
   position: absolute;
   top: 100%;
@@ -73,7 +74,7 @@ body {
   background: rgb(104, 227, 66);
   transition: .3s;
 }
-.navbar a:hover::before ,.col ul li a:hover::before{
+.navbar a:hover::before ,.ftr_element ul li a:hover::before{
   width: 100%;
   color: rgb(138, 253, 103);
 }
@@ -385,7 +386,7 @@ footer{
 
   line-height: 20px;
 }
-.row{
+.ftr{
   width: 85%;
   margin: auto;
   display: flex;
@@ -394,25 +395,25 @@ footer{
   justify-content: space-between;
 }
 
-.col{
+.ftr_element{
   flex-basis: 25%;
   padding: 10px;
 }
-.col h3{
+.ftr_element h3{
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
 }
 .footer_email{
   width: fit-content;
-  border-bottom: 1px solid #f66335;
+  border-bottom: 1px solid #93ffb3;
   margin: 20px 0;
 }
-.col ul li{
+.ftr_element ul li{
   list-style: none;
   margin-bottom: 12px;
 }
-.col ul li a{
+.ftr_element ul li a{
   text-decoration: none;
   color: #fff;
 }
@@ -657,4 +658,32 @@ footer .copyright{
   .video_zone video {
     width: 100%;
   }
+}
+
+
+
+/* ************animation************* */
+/* logo */
+.logo img:hover {
+  transform: scale(1.1);
+}
+/* accueil */
+#accueil {
+  animation: fadeIn 1.5s ease-in;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/* catégorie */
+.element_categorie {
+  transition: transform 0.3s ease;
+}
+
+.element_categorie:hover {
+  transform: translateY(-10px);
 }
