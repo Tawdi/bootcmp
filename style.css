@@ -88,7 +88,8 @@ body {
 .image_accueil{
   width: 40%;
   height: 400px;
-  background-color: rgba(127, 255, 159, 0.692);
+  /* background-color: rgba(127, 255, 159, 0.692); */
+  background-image: url(image/33.jpg);
 }
 .text_accueil{
   margin: 30px;
