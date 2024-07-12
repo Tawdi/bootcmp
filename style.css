@@ -10,7 +10,7 @@
 }
 :root{
   --border-herb:2px #cefa94 solid ;
-  --font-herb: 30px;
+  --font-herb: 40px;
   --font-herb-title:27px;
   --color-background: linear-gradient(to top left,#02963379, #504f4f1c);
 }
@@ -83,22 +83,22 @@ body {
 #accueil{
   display: flex;
   margin: 20px;
+  justify-content: space-evenly;
   align-items: center;
 }
 .image_accueil{
-  width: 40%;
+  flex-basis: 40%;
   height: 400px;
-  /* background-color: rgba(127, 255, 159, 0.692); */
+  border-radius: 30px;
+  border: var(--border-herb);
+  background-size: cover;
   background-image: url(image/33.jpg);
 }
+
 .text_accueil{
   margin: 30px;
   padding:70px 30px 30px 30px ;
-  /* border: var(--border-herb);
-  border-radius: 30px; 
-  background: linear-gradient(to top left, #02963379, #504f4f1c);
-  backdrop-filter: blur(10px); */
-  width: 60%;
+  flex-basis: 50%;
   font-size: var(--font-herb-title);
   border-radius: 30px;
   backdrop-filter: blur(20px);
@@ -522,6 +522,7 @@ footer .copyright{
 @media (max-width: 768px) {
   :root{
     --font-herb: 30px;
+    --font-herb-title:20px;
   }
   .navbar a {
     margin-left: 20px;
@@ -547,6 +548,9 @@ footer .copyright{
   #categorie {
     padding: 10px 20px;
   } */
+   footer{
+    font-size: 15px;
+   }
 
   .element_categorie_image1,
   .element_categorie_image2,
@@ -588,7 +592,8 @@ footer .copyright{
 
 @media (max-width: 576px) {
   :root{
-    --font-herb: 20px;
+    --font-herb: 30px;
+    --font-herb-title:20px;
   }
     .navbar a {
     margin-left: 10px;
@@ -687,4 +692,14 @@ footer .copyright{
 
 .element_categorie:hover {
   transform: translateY(-10px);
+}
+@keyframes slideInUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
